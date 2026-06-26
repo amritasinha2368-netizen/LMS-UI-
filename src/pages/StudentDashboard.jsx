@@ -177,7 +177,7 @@ export default function StudentDashboard({ user, setRole }) {
             <h3>Pro Tip</h3>
             <p>
               Complete assignments and take quizzes regularly to earn more XP and climb
-              the leaderboard.When you get 500 XP, you will unlock the Quiz Master!
+              the leaderboard.When you et 500 XP, you will unlock the Quiz Master!
             </p>
           </div>
 

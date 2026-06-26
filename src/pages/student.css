@@ -880,56 +880,171 @@ button {
     gap: 14px;
   }
 }
-@media (max-width: 760px) {
-  .student-navbar {
-    height: auto !important;
-    padding: 22px 20px !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 18px !important;
+@media (max-width: 900px) {
+  .student-main {
+    padding: 22px;
   }
 
-  .brand {
-    font-size: 30px !important;
-    gap: 10px !important;
-    justify-content: center !important;
-    width: 100% !important;
+  .stats-row,
+  .top-grid,
+  .bottom-grid {
+    grid-template-columns: 1fr !important;
+    gap: 22px;
   }
 
-  .brand svg {
-    width: 30px !important;
-    height: 30px !important;
+  .dash-card,
+  .streak-card,
+  .top-stat {
+    width: 100%;
+    min-width: 0;
+    height: auto;
   }
 
-  .nav-right {
-    width: 100% !important;
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
-    gap: 16px !important;
-    flex-wrap: nowrap !important;
+  .subjects {
+    grid-template-columns: repeat(3, 1fr);
   }
 
-  .bell-btn {
-    width: 48px !important;
-    height: 48px !important;
+  .quiz-box,
+  .assignment-box {
+    width: 100%;
   }
 
-  .student-label {
-    font-size: 14px !important;
-    font-weight: 900 !important;
+  .quiz-btn,
+  .primary-btn {
+    width: 100%;
+  }
+}@media (max-width: 900px) {
+  .student-main {
+    padding: 22px;
   }
 
-  .avatar {
-    width: 50px !important;
-    height: 50px !important;
+  .stats-row,
+  .top-grid,
+  .bottom-grid {
+    grid-template-columns: 1fr !important;
+    gap: 22px;
   }
 
-  .logout-btn {
-    height: 48px !important;
-    padding: 0 20px !important;
-    border-radius: 14px !important;
-    font-size: 14px !important;
+  .dash-card,
+  .streak-card,
+  .top-stat {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+  }
+
+  .subjects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quiz-box,
+  .assignment-box {
+    width: 100%;
+  }
+
+  .quiz-btn,
+  .primary-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .student-main {
+    padding: 22px;
+  }
+
+  .stats-row,
+  .top-grid,
+  .bottom-grid {
+    grid-template-columns: 1fr !important;
+    gap: 22px;
+  }
+
+  .dash-card,
+  .streak-card,
+  .top-stat {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+  }
+
+  .subjects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quiz-box,
+  .assignment-box {
+    width: 100%;
+  }
+
+  .quiz-btn,
+  .primary-btn {
+    width: 100%;
+  }
+}@media (max-width: 900px) {
+  .student-main {
+    padding: 22px;
+  }
+
+  .stats-row,
+  .top-grid,
+  .bottom-grid {
+    grid-template-columns: 1fr !important;
+    gap: 22px;
+  }
+
+  .dash-card,
+  .streak-card,
+  .top-stat {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+  }
+
+  .subjects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quiz-box,
+  .assignment-box {
+    width: 100%;
+  }
+
+  .quiz-btn,
+  .primary-btn {
+    width: 100%;
+  }
+}
+@media (max-width: 900px) {
+  .student-main {
+    padding: 22px;
+  }
+
+  .stats-row,
+  .top-grid,
+  .bottom-grid {
+    grid-template-columns: 1fr !important;
+    gap: 22px;
+  }
+
+  .dash-card,
+  .streak-card,
+  .top-stat {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+  }
+
+  .subjects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .quiz-box,
+  .assignment-box {
+    width: 100%;
+  }
+
+  .quiz-btn,
+  .primary-btn {
+    width: 100%;
   }
 }
