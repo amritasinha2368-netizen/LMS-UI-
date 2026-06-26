@@ -339,14 +339,19 @@ button {
   background: white;
   border: 1px solid #e6e7f2;
   border-radius: 22px;
-  padding: 20px 24px;
-  display: grid;
-  grid-template-columns: 56px 1fr auto;
-  align-items: center;
+  padding: 20px 58px 20px 24px;
+  display: flex;
+  align-items: flex-start;
   gap: 18px;
+  position: relative;
   box-shadow: 0 14px 35px rgba(16, 24, 40, 0.06);
 }
 
+.teacher-tip > svg {
+  position: absolute;
+  top: 22px;
+  right: 24px;
+}
 .tip-bulb {
   width: 52px;
   height: 52px;
@@ -392,31 +397,57 @@ button {
   }
 
   .teacher-hero {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 20px;
+    gap: 16px;
+  }
+
+  .teacher-hero-content {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .teacher-hero img {
+    width: 120px;
+    height: auto;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  .teacher-hero h1 {
+    font-size: 42px;
+    line-height: 1.05;
+    margin-bottom: 12px;
+  }
+
+  .teacher-hero p {
+    font-size: 18px;
+  }
+
+  .teacher-hero h4 {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+}
+
+
+
+
+@media (max-width: 760px) {
+  .teacher-tip {
+    padding: 18px 52px 18px 18px;
     align-items: flex-start;
   }
 
-  .teacher-grid {
-    grid-template-columns: 1fr;
+  .teacher-tip > svg {
+    top: 18px;
+    right: 18px;
   }
 
-  .teacher-card {
-    grid-template-columns: 1fr;
+  .teacher-tip p {
+    line-height: 1.5;
   }
-
-  .teacher-tip {
-    grid-template-columns: 1fr;
-  }
-}
-.teacher-hero {
-  padding: 42px 52px;
-  position: relative;
-}
-
-.teacher-hero img {
-  width: px;
-  height: 220px;
-  object-fit: contain;
-  margin-right: 60px;
-  transform: translateY(8px);
 }

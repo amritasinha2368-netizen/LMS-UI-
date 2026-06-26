@@ -338,18 +338,23 @@ button {
 }
 
 .admin-tip {
-  margin-top: 20px;
+  margin-top: 26px;
   min-height: 88px;
   background: white;
   border: 1px solid #e6e7f2;
   border-radius: 22px;
-  padding: 20px 24px;
-  display: grid;
-  grid-template-columns: 58px 1fr auto;
-  align-items: center;
+  padding: 20px 58px 20px 24px;
+  display: flex;
+  align-items: flex-start;
   gap: 18px;
+  position: relative;
   box-shadow: 0 14px 35px rgba(16, 24, 40, 0.06);
-  overflow: hidden;
+}
+
+.admin-tip > svg {
+  position: absolute;
+  top: 22px;
+  right: 24px;
 }
 
 .admin-tip-icon {
@@ -420,4 +425,21 @@ button {
   .admin-tip {
     grid-template-columns: 1fr;
   }
+}
+@media (max-width:760px){
+
+.admin-tip{
+  padding:18px 52px 18px 18px;
+  align-items:flex-start;
+}
+
+.admin-tip > svg{
+  top:18px;
+  right:18px;
+}
+
+.admin-tip p{
+  line-height:1.5;
+}
+
 }

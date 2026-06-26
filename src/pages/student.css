@@ -542,9 +542,22 @@ button {
 
 .tip-card {
   margin-top: 26px;
-  display: grid;
-  grid-template-columns: 64px 1fr auto;
-  align-items: center;
+  min-height: 88px;
+  background: white;
+  border: 1px solid #e6e7f2;
+  border-radius: 22px;
+  padding: 20px 58px 20px 24px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  position: relative;
+  box-shadow: 0 14px 35px rgba(16, 24, 40, 0.06);
+}
+
+.tip-card > svg {
+  position: absolute;
+  top: 22px;
+  right: 24px;
 }
 
 .tip-icon {
@@ -744,4 +757,179 @@ button {
   color: white;
   font-weight: 900;
   font-size: 16px;
+}
+@media (max-width: 760px) {
+  html,
+  body {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .student-page {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+
+
+  .nav-right {
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .student-main {
+    width: 100%;
+    padding: 18px;
+    overflow-x: hidden;
+  }
+
+  .hero-row {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .stats-row,
+  .top-grid,
+  .bottom-grid,
+  .dashboard-grid {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .dash-card,
+  .streak-card,
+  .tip-card,
+  .top-stat {
+    width: 100%;
+    min-width: 0;
+    height: auto;
+    min-height: auto;
+    overflow: hidden;
+  }
+
+  .subjects {
+    grid-template-columns: 1fr;
+  }
+
+  .subject-box {
+    width: 100%;
+  }
+
+  .quiz-box,
+  .assignment-box,
+  .xp-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .quiz-img,
+  .trophy-img {
+    width: 120px;
+    height: 120px;
+    align-self: center;
+  }
+
+  .quiz-btn,
+  .primary-btn {
+    width: 100%;
+  }
+
+  .progress {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .xp-small {
+    max-width: 100%;
+  }
+
+  .badges {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .badges span {
+    width: 100%;
+    text-align: center;
+  }
+
+  .leaderboard {
+    width: 100%;
+  }
+
+  .rank {
+    grid-template-columns: 45px 1fr auto;
+    padding: 0 12px;
+  }
+
+  .streak-card h3,
+  .card-head h2 {
+    white-space: normal;
+    font-size: 22px;
+  }
+
+  .tip-card {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+}
+@media (max-width: 760px) {
+  .student-navbar {
+    height: auto !important;
+    padding: 22px 20px !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 18px !important;
+  }
+
+  .brand {
+    font-size: 30px !important;
+    gap: 10px !important;
+    justify-content: center !important;
+    width: 100% !important;
+  }
+
+  .brand svg {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  .nav-right {
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 16px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .bell-btn {
+    width: 48px !important;
+    height: 48px !important;
+  }
+
+  .student-label {
+    font-size: 14px !important;
+    font-weight: 900 !important;
+  }
+
+  .avatar {
+    width: 50px !important;
+    height: 50px !important;
+  }
+
+  .logout-btn {
+    height: 48px !important;
+    padding: 0 20px !important;
+    border-radius: 14px !important;
+    font-size: 14px !important;
+  }
 }
